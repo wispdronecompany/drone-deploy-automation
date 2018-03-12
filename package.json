@@ -1,5 +1,5 @@
 {
-  "name": "selenium-js-mocha",
+  "name": "drone-deploy-automation",
   "version": "1.0.0",
   "description": "A project to go along with blog posts explaining how to get started with functional testing using Selenium, JavaScript and Mocha.",
   "main": "test1.js",
