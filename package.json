@@ -1,0 +1,22 @@
+{
+  "name": "selenium-js-mocha",
+  "version": "1.0.0",
+  "description": "A project to go along with blog posts explaining how to get started with functional testing using Selenium, JavaScript and Mocha.",
+  "main": "test1.js",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "chance": "^1.0.13",
+    "mocha": "^2.5.3",
+    "selenium-webdriver": "^2.53.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha signup_and_login_test.js",
+    "test:login_page": "mocha login_page_test.js",
+    "test:signup_page": "mocha signup_page_test.js",
+    "test:all": "mocha login_page_test.js && mocha signup_page_test.js && mocha signup_and_login_test.js"
+
+  },
+  "author": "Stephen Cavender",
+  "license": "ISC"
+}
