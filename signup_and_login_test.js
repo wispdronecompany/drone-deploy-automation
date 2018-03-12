@@ -21,7 +21,22 @@ test.describe('Signup and login', () => {
       var chance = new Chance()
 
       // Go to URL
-      driver.get('https://www.dronedeploy.com/signup.html')
+      driver.get('https://www.dronedeploy.com')
+
+      // Waits for page to fully load
+      driver.wait(() => {
+        return driver.executeScript('return document.readyState').then((readyState) => {
+          return readyState === 'complete'
+        })
+      })
+
+      // Find title and assert
+      driver.executeScript('return document.title').then((res) => {
+        assert.equal(res, 'Powerful Drone & UAV Mapping Software | DroneDeploy')
+      })
+
+      // Click on signup link
+      driver.findElement(By.xpath('//a[@class="btn btn-secondary" and contains(text(), "Sign Up")]')).click()
 
       // Waits for page to fully load
       driver.wait(() => {
