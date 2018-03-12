@@ -16,3 +16,4 @@
     "test:signup_page": "mocha signup_page_test.js",
     "test:all": "mocha login_page_test.js && mocha signup_page_test.js && mocha signup_and_login_test.js"
   }
+}
